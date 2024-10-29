@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+
+/* Task 1 */
+body > p + #categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+#categories .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: #f6f6fe;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+#categories h2 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.96px;
+  margin: 0;
+}
+
+#categories > li > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+#categories > li > ul > li {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+  border: 1px solid #808080;
+  border-radius: 2px;
+  padding: 8px;
+}
+/* Task 2 */
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Task 3 */
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  color: #808080;
+}
+
+input ~ h1 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.96px;
+}
+
+/* Task 4 */
+
+form {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 8px;
+  background: #fff;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+form input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+form input:focus {
+  outline: 1px solid #000000;
+}
+
+button {
+  margin-top: 8px;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  border: none;
+  height: 40px;
+  width: 86px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+/* Task 5 */
+
+.widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 88px;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.widget p {
+  margin: 0;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.change-color {
+  margin: 0;
+  width: auto;
+  height: auto;
+  padding: 16px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+/* Task 6 */
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 32px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  text-align: center;
+  min-height: 40px;
+  min-width: 150px;
+}
+
+#controls button {
+  margin: 0;
+  display: flex;
+  min-width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+#controls button:hover {
+  background-color: #6c8cff;
+}
+
+#controls > button + button {
+  background-color: #ff4e4e;
+}
+
+#controls > button + button:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  justify-content: flex-start;
+  padding: 32px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+}
